@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    font-family: consolas; 
+    /* border: solid;  */
+}
+header{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(51, 54, 120);
+}
+
+.title-h1{
+    color: silver; 
+    font-size: 3rem; 
+}
+.grid-wrapper{
+    height: 800px;
+    width: 800px; 
+    margin: 0 auto; 
+    background-color:darkslategray;
+
+    /* border-top: 10px solid white;  */
+    /* border-left: 10px solid white;  */
+    /* border-right: 10px solid black; 
+    border-bottom: 10px solid black;  */
+    box-shadow: 6px 6px 10px 10px slategrey;
+    /* padding: 1rem;  */
+    /* border: 20px solid pink;  */
+}
+.grid-wrapper-header{
+    display: flex; 
+    justify-content: center;
+    font-size: 1rem; 
+    background-color: grey;
+    width: 79%; 
+    margin: 0 auto; 
+
+}
+.grid-wrapper-header div{
+    /* border: solid;  */
+    border-top: 10px solid white; 
+    border-left: 10px solid white; 
+    border-right: 10px solid darkslategrey; 
+    border-bottom: 10px solid darkslategrey; 
+    background-color: lightgrey;
+    /* margin: 0; */
+    
+    width: 50%; 
+    
+}
+
+.grid-wrapper-header div:active{
+    border-top: 10px solid grey; 
+    border-left: 10px solid grey; 
+    border-right: 10px solid grey; 
+    border-bottom: 10px solid grey;
+    /* box-shadow: 2px 2px 2px 2px darkslategrey; */
+}
+
+
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    height: 80%; 
+    width: 80%; 
+    margin: 2rem auto; 
+    /* padding: 0;  */
+    margin-top: 0; 
+    /* height: 500px; 
+    width: 500px;  */
+    /* border-left: 15px solid grey;
+    border-right: 15px solid white;
+    border-top: 15px solid grey; 
+    border-bottom: 15px solid white; */
+    
+
+    background-color: lightgrey;
+    text-align: center; 
+
+}
+
+.grid-item[flagged]:not([clicked]):active{
+    border-top: 6px solid white; 
+    border-left: 6px solid white; 
+    border-right: 6px solid grey; 
+    border-bottom: 6px solid grey; 
+}
+.grid-item[flagged]:not([clicked]){
+    background-color: red;;
+}
+
+.grid-item span{
+    visibility: hidden;
+}
+.grid-item[clicked] span{
+    visibility: visible; 
+}
+
+.grid-item[clicked]{
+    border: none; 
+    border-left: 6px solid grey; 
+    border-top: 6px solid grey; 
+    
+}
+
+
+.grid-item{
+    border-top: 6px solid white; 
+    border-left: 6px solid white; 
+    border-right: 6px solid grey; 
+    border-bottom: 6px solid grey; 
+
+}
+
+
+.grid-item:not([clicked]):active{
+    /* background-color: red; */
+    border-top: 6px solid grey;
+    border-left: 6px solid grey ;
+    border-right: 6px solid grey; 
+    border-bottom: 6px solid grey; 
+}
+.grid-item-cell-value{
+    font-weight: bold;
+    font-size: 2rem; 
+  
+}
