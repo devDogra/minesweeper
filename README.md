@@ -1,2 +1,4 @@
 # minesweeper
-https://en.wikipedia.org/wiki/Minesweeper_(video_game)
+
+
+LIVE: https://devdogra.github.io/minesweeper/
